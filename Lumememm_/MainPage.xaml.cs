@@ -13,8 +13,9 @@ namespace Lumememm_
     {
         public MainPage()
         {
-            
-            
+            InitializeComponent();
+
+
         }
 
         private void btn_Clicked(object sender, EventArgs e)
@@ -44,15 +45,22 @@ namespace Lumememm_
 
         private async void btn3_Clicked(object sender, EventArgs e)
         {
-            for (int i = 0; i < 100; i++)
-            {
-                f1.Opacity--;
-                f2.Opacity--;
-                f3.Opacity--;
-
-                await Task.Run(() => Thread.Sleep(100));
-
-            }
+            f1.Opacity = 0.75;
+            f2.Opacity = 0.75;
+            f3.Opacity = 0.75;
+            await Task.Run(() => Thread.Sleep(100));
+            f1.Opacity = 0.50;
+            f2.Opacity = 0.50;
+            f3.Opacity = 0.50;
+            await Task.Run(() => Thread.Sleep(100));
+            f1.Opacity = 0.25;
+            f2.Opacity = 0.25;
+            f3.Opacity = 0.25;
+            await Task.Run(() => Thread.Sleep(100));
+            f1.Opacity = 0;
+            f2.Opacity = 0;
+            f3.Opacity = 0;
+            await Task.Run(() => Thread.Sleep(100));
         }
     }
 }

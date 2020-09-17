@@ -10,7 +10,7 @@ namespace Lumememm_
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Lumememm_absolutelayout();
         }
 
         protected override void OnStart()

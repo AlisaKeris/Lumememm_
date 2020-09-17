@@ -4,17 +4,17 @@
              x:Class="Lumememm_.MainPage">
 
     <StackLayout>
-        <Frame x:Name ="f1" BackgroundColor="Black" CornerRadius="0" HeightRequest="200" WidthRequest="50" Opacity="1">
+        <Frame x:Name ="f1" BackgroundColor="Black" HeightRequest="100" Opacity="1" Margin="30">
         </Frame>
-        <Frame x:Name ="f2" BorderColor="Black" CornerRadius="180" HeightRequest="200" Opacity="1">
+        <Frame x:Name ="f2" BorderColor="Black" CornerRadius="90"  HeightRequest="100" Opacity="1" >
         </Frame>
-        <Frame x:Name ="f3" BorderColor="Black" CornerRadius="180" HeightRequest="200" Opacity="1">
+        <Frame x:Name ="f3" BorderColor="Black" CornerRadius="90" HeightRequest="100" Opacity="1">
         </Frame>
-        <StackLayout Orientation="Horizontal">
+        <StackLayout Orientation="Vertical">
             <Button x:Name="btn"  BackgroundColor="Black" FontSize="Large" TextColor="White" Text="Спрятать снеговика" Clicked="btn_Clicked"></Button>
             <Button x:Name="btn2"  BackgroundColor="Black" FontSize="Large" TextColor="White" Text="Отобразить снеговика" Clicked="btn2_Clicked"></Button>
             <Button x:Name="btnrnd"  BackgroundColor="Black" FontSize="Large" TextColor="White" Text="Random color" Clicked="btnrnd_Clicked"></Button>
-            <Button x:Name="btn3"  BackgroundColor="Black" FontSize="Large" TextColor="White" Text="Растопить снеговика" Clicked="btn3_Clicked"></Button>
+            <Button x:Name="btn3"  BackgroundColor="Black" FontSize="Large" TextColor="White" Text="Растопить снеговика " Clicked="btn3_Clicked"></Button>
             </StackLayout>
         </StackLayout>
 
